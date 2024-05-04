@@ -26,4 +26,19 @@ Main Differences:
           here only 4 bytes of memory is used since when the loop ends each time int a is set free.
    Dynamic: while(true) { int a = new int; } 
             here only 4 bytes of int a is releases while memory created in heap is not releases
-    
+
+Implementation of 2D Array using Dynamic Memory Allocation:
+
+1. Creation:
+  int **arr = new int *[m];
+  for(i=0;i<m;i++)
+  {
+    int *arr[i] = new int[n];
+  }    
+
+2. Deleteion/Free:
+  for(i=0;i<m;i++)
+  {
+    delete [] arr[i];
+  }
+  delete [] arr;
