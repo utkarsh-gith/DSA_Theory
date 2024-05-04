@@ -1,0 +1,5 @@
+OBJECT ORRIENTED PROGRAMMING
+
+Object:
+  - is an entity which has a state/properties and behaviour
+  - 
