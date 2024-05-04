@@ -11,6 +11,7 @@ Memeory:
           - to access Heap memory in C++, we use keyword "new"
           - For eg: char *ch = new char;
                     int *i = new int;
+          - To delete/free the allocated meomry : delete i; , detlete []arr;
 
 In char *ch= new char; , memory (8 bytes) of pointer ch is allocated in stack while the new character memory (1 byte) is assigned in heap
 In int *i = new int; , memory (8 bytes) of pointer i is allocated in stack while the new integer memory (8 bytes) is assigned in heap
@@ -24,4 +25,5 @@ Main Differences:
 2. Staic: while(true) { int a = 5; }
           here only 4 bytes of memory is used since when the loop ends each time int a is set free.
    Dynamic: while(true) { int a = new int; } 
+            here only 4 bytes of int a is releases while memory created in heap is not releases
     
