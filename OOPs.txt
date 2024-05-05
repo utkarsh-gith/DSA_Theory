@@ -2,4 +2,73 @@ OBJECT ORRIENTED PROGRAMMING
 
 Object:
   - is an entity which has a state/properties and behaviour
+  - instance of a class
+  - For eg: In a hero: properties: health, level, name; behavior: attack(),defence(),dance(),sing();
+
+Class:
+  - defination: class class_name { 
+                    data memebers;
+                    member functions;
+                    };
+  - For eg: class student {
+                int roll no;
+                char name;
+                }
+            The size of the class is 5 bytes: (4+1)
+ - For eg: class home {
+                }
+            This is an empty class.
+            The size of the class is 1 byte because even when the class is empty it is allocated 1 byte for indentification or keeping track of it
+  - accessing data members of the class is done using dot operator
+
+Access Modifiers:
+
+1.Public:
+  - can be accessed inside or outside the class
+2.Private:
+  - default: if any access modifiers are not mentioned, then it is private by default
+  - can be accessed only inside the class
+3.Protected:
   - 
+
+
+Getters/Setters:
+  - these are functions in the class to get or set the values of the private data members as it cannot be accessed inside the class
+ - For eg: 
+
+
+#include<iostream>
+#define stacksize 5
+using namespace std;
+class student{
+    int roll;
+    string name;
+
+    public:
+        int getRoll(){              //Getter
+            return roll;
+        }
+        string getName(){           //Getter
+            return name;
+        }
+        void setRoll(int r){       //Setter
+            roll=r;
+        }
+        void setName(string n){   //Setter
+            name=n;
+        }
+};
+int main()
+{
+    student s;
+    int r;
+    string n;
+    cout<<endl<<"Enter name: ";
+    cin>>n;
+    cout<<"Enter roll: ";
+    cin>>r;
+    s.setName(n);
+    s.setRoll(r);
+    cout<<endl<<"Name: "<<s.getName()<<endl;
+    cout<<"Roll: "<<s.getRoll()<<endl;
+}
