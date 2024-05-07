@@ -12,3 +12,15 @@ Disadvantages:
  - size must be known at compile time
  - removing or adding elements requires shifting of existing elements
  - insertions and deletions 
+
+Declaration:
+ - int arr[10];
+ - int arr[3]={2,3,4};
+ - int arr[100] = {0}; , this will initialise the whole array to 0
+ - if we have to initialise to any other value: two ways
+   - int arr[10]; , fill(arr,arr+10,3);
+   - #include<array> , array <int,10>arr; , arr.fill(5);
+ - here arr is the array with 10 memory block with arr pointing the address to the first block
+ - if the array has n memory blocks, the nindex starts from 0 to n-1 
+ - to access all elemnts of the array: for(int i=0;i<arr.size();i++)
+ - 
