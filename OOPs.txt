@@ -171,3 +171,17 @@ DESTRUCTOR:
 
  - to write functions outside the class or assgin values to data members outside the class, return_type class_name::memberfunction(){ };
                                                                                             data_type class_name::datamember = 5;
+
+DATA ENCAPSULATION:
+ - (ChatGPT) Data encapsulation is a fundamental principle in object-oriented programming (OOP) that involves bundling the data (variables) 
+   and methods (functions) that operate on the data into a single unit, called a class. Encapsulation allows the implementation details of 
+   a class to be hidden from users of the class, promoting information hiding and reducing dependencies between different parts of a program.
+ - inforamtion/data hiding
+
+Fully Encapsulated class: All data members are private
+
+Advantages:
+ - Data hiding which increases security
+ - class can be made read only, no changes to data members
+ - Code reusability
+ - Unit testing 
