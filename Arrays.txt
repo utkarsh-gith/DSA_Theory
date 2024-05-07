@@ -1,0 +1,14 @@
+ARRAYS:
+ - built in datatype
+ - used to store multiple values of single data type
+
+Advantages:
+ - stores data in sequential memory locations which can be accessed easily using index.
+ - elements of array can be accessed using index which makes operations like traversal amd upadation of time complexity O(1).
+ - simple syntax for declaration and initialisation
+
+Disadvantages:
+ - fixed size
+ - size must be known at compile time
+ - removing or adding elements requires shifting of existing elements
+ - insertions and deletions 
