@@ -23,4 +23,7 @@ Declaration:
  - here arr is the array with 10 memory block with arr pointing the address to the first block
  - if the array has n memory blocks, the nindex starts from 0 to n-1 
  - to access all elemnts of the array: for(int i=0;i<arr.size();i++)
- - 
+ 
+
+ - When we pass an array to the function and make changes to it in the function, then the changes are
+   made to the original array, not to a copy since we pass the address not the value
