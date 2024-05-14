@@ -26,4 +26,20 @@ LINKED LIST:
             Node *prev; 
      }; 
   - Circular Linked List
+   - contains a data element and a ponter pointing the next node
+   - the last node points head 
+   - class Node{
+        public:
+            int data;
+            Node *next;  
+     }; 
   - Circular Doubly Linked List
+   - contains a data element, a ponter pointing the next node and a
+     pointer pointing to the previous node
+   - the last node points the head
+   - class Node{
+        public:
+            int data;
+            Node *next;  
+            Node *prev; 
+     };
