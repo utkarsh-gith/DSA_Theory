@@ -25,3 +25,6 @@ Representation:
  - Adjacency Matrix: An adjacency matrix is a way to represent a graph where the rows and columns 
    represent vertices, and the entries represent edges between vertices. For an undirected graph, 
    the matrix is symmetric. For a directed graph, it might not be symmetric.
+ - Adjacency List: An adjacency list consists of an array of lists or vectors, where each element 
+   in the array represents a vertex in the graph, and the list or vector associated with each vertex 
+   contains the vertices adjacent to that vertex.
